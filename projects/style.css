@@ -315,3 +315,37 @@ header .navbar ul li a:hover{
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+/* Ensure images don't overflow */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive container */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adds space between items */
+    text-align: center;
+}
+
+/* Ensure images scale properly */
+.project-image {
+    width: 100%;
+    max-width: 500px; /* Adjust as needed */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .project-container {
+        flex-direction: column;
+    }
+
+    .project-image {
+        max-width: 90%; /* Reduce image size on smaller screens */
+    }
+}
