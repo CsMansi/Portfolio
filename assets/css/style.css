@@ -657,20 +657,33 @@ header .navbar ul li a:hover {
   gap: 1.5rem;
   margin: 2rem;
 }
-.work .box-container .box {
-  flex: 1 1 30rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  position: relative;
-  overflow: hidden;
-  height: 30rem;
+.work .box-container .box img {
+  height: auto; /* Maintain aspect ratio */
+  width: 100%;  /* Responsive width */
+  max-width: 100%; /* Prevents overflow */
+  object-fit: cover;
+  display: block; /* Avoids extra spacing */
 }
 
-@media screen and (max-width: 450px) {
-  .work .box-container .box img{
-    object-fit: cover;
+/* Optional: Add responsiveness for different screen sizes */
+@media (max-width: 768px) {
+  .work .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .work .box-container .box {
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
+
+@media (max-width: 480px) {
+  .work .box-container .box {
+    width: 100%;
+  }
+}
+
 .work .box-container .box img {
   height: 100%;
   width: 100%;
