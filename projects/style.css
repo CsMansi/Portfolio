@@ -320,32 +320,40 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+    object-fit: cover; /* Ensures the image scales correctly */
 }
 
-/* Responsive container */
+/* Container settings */
 .project-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px; /* Adds space between items */
     text-align: center;
+    overflow: hidden;
 }
 
-/* Ensure images scale properly */
+/* Responsive image handling */
 .project-image {
     width: 100%;
     max-width: 500px; /* Adjust as needed */
-    border-radius: 10px; /* Optional: Adds rounded corners */
+    border-radius: 10px;
 }
 
-/* Media Query for Smaller Screens */
+/* Ensure content fits within screen */
+.project-content {
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Media Query for Mobile Screens */
 @media (max-width: 768px) {
     .project-container {
         flex-direction: column;
     }
 
     .project-image {
-        max-width: 90%; /* Reduce image size on smaller screens */
+        max-width: 90%;
     }
 }
