@@ -1,0 +1,20 @@
+[
+  {
+    "name": "StaffCore",
+    "desc": " Designed and implemented a responsive web application for managing employee and administrator functionalities",
+    "image": "staffZen",
+    "links": {
+      "view": "https://staffcore.netlify.app/",
+      "code": "https://github.com/CsMansi/staffCore"
+    }
+  },
+  {
+    "name": "Movie Recommendation",
+    "desc": "Led the front-end development by harnessing a versatile tech stack.",
+    "image": "movie-rec",
+    "links": {
+      "view": "https://csmansi.github.io/Movie-Recommendation/",
+      "code": "https://github.com/CsMansi/Movie-Recommendation"
+    }
+  }
+]
